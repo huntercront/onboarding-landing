@@ -122,7 +122,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     var l = new Loader();
     l.require([
-            '../js/date-select.js'
+            './js/date-select.js'
         ],
         function() {
 
