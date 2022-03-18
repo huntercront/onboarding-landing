@@ -599,45 +599,101 @@
 	    position: relative;
 	}
 	
-	.play-video .video-icon {
-	    fill: rgba(55, 150, 246, 0.3);
-	}
-	
-	.play-simbol,
-	.play-video .video-icon {
-	    transition: 200ms ease-in;
-	    transition-property: fill;
-	}
-	
-	.play-video:hover .video-icon {
-	    fill: var(--main);
-	}
-	
-	.play-video:hover .play-simbol {
-	    fill: #ffffff;
-	}
-	
-	.play-video .video-icon {}
-	
 	.play-video {
 	    position: absolute;
-	    top: 40%;
+	    top: 45%;
 	    left: 50%;
-	    transform: translate(-50%, -30%);
+	    transform: translate(-50%, -50%);
 	    z-index: 20;
 	    padding: 0;
 	    background: transparent;
 	    border: none;
 	    visibility: hidden;
+	    margin-bottom: -2rem;
 	    opacity: 0;
 	    transition: 200ms ease-in 1200ms;
-	    transition-property: visibility, opacity, transform;
+	    transition-property: visibility, opacity, top;
+	}
+	
+	.button-inner {
+	    border-radius: 5rem;
+	    border: 1px solid var(--main);
+	    padding: 0.25rem;
+	}
+	
+	.button-content {
+	    background: rgba(0, 133, 255, 0.1);
+	    border-radius: 5rem;
+	    padding: 2rem;
+	    transition: 300ms ease-in;
+	    transition-property: background;
+	}
+	
+	.button-text {
+	    font-size: 0.875rem;
+	    font-weight: 500;
+	    color: var(--white);
+	    display: block;
+	    text-align: left;
+	    line-height: 1;
+	    overflow: hidden;
+	    margin-top: -0.125rem;
+	    width: 0;
+	    white-space: nowrap;
+	    transition: 300ms ease-in;
+	    transition-property: width;
+	}
+	
+	.button-icon path {
+	    transition: 300ms ease-in;
+	    transition-property: fill;
+	    fill: var(--main);
+	}
+	
+	.button-icon svg {
+	    width: 0.875rem;
+	    height: 1.5rem;
+	}
+	
+	.button-icon {
+	    width: 1.5rem;
+	    height: 1.5rem;
+	}
+	
+	.button-content {
+	    overflow: hidden;
+	}
+	
+	.play-video:hover .button-text {
+	    width: 9rem;
+	}
+	
+	.play-video:hover .button-content {
+	    background: var(--main);
+	}
+	
+	.play-video:hover .button-icon path {
+	    fill: var(--white);
 	}
 	
 	.animate-active .play-video {
 	    opacity: 1;
 	    visibility: visible;
-	    transform: translate(-50%, -50%);
+	    top: 40%;
+	}
+	
+	.token {
+	    font-size: 0.5rem;
+	    font-weight: 600;
+	    text-transform: uppercase;
+	    display: inline-block;
+	    vertical-align: middle;
+	    padding: 0 0.5rem;
+	    background: var(--main);
+	    border-radius: 1rem;
+	    margin-left: 0.5rem;
+	    color: var(--white);
+	    line-height: 1.5;
 	}
 	
 	.column {
@@ -877,16 +933,16 @@
 	        transform: translate(0, 0%);
 	    }
 	    10% {
-	        transform: translate(0, 5%);
+	        transform: translate(0, 3%);
 	    }
 	    30% {
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -22%);
+	        transform: translate(0, -18%);
 	    }
 	    100% {
-	        transform: translate(0, -15%);
+	        transform: translate(0, -16%);
 	    }
 	}
 	
@@ -896,7 +952,7 @@
 	}
 	
 	.animate-active .img-menu {
-	    animation: imgMenu 700ms ease-in forwards;
+	    animation: imgMenu 700ms ease-in-out forwards;
 	}
 	
 	@keyframes imgMenu {
@@ -910,7 +966,7 @@
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -10%);
+	        transform: translate(0, -5%);
 	    }
 	    100% {
 	        transform: translate(0, -3%);
@@ -922,7 +978,7 @@
 	}
 	
 	.animate-active .img-sidebar {
-	    animation: imgSidebar 700ms 600ms ease-in forwards;
+	    animation: imgSidebar 700ms 600ms ease-in-out forwards;
 	}
 	
 	@keyframes imgSidebar {
@@ -936,7 +992,7 @@
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -10%);
+	        transform: translate(0, -5%);
 	    }
 	    100% {
 	        transform: translate(0, -3%);
@@ -953,11 +1009,11 @@
 	}
 	
 	.animate-active .img-row-1 {
-	    animation: imgRowOne 600ms 450ms ease-in forwards;
+	    animation: imgRowOne 600ms 450ms ease-in-out forwards;
 	}
 	
 	.animate-active .img-row-2 {
-	    animation: imgRowTwo 600ms 500ms ease-in forwards;
+	    animation: imgRowTwo 600ms 500ms ease-in-out forwards;
 	}
 	
 	@keyframes imgRowOne {
@@ -971,7 +1027,7 @@
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -17%);
+	        transform: translate(0, -13%);
 	    }
 	    100% {
 	        transform: translate(0, -14%);
@@ -989,7 +1045,7 @@
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -14%);
+	        transform: translate(0, -12%);
 	    }
 	    100% {
 	        transform: translate(0, -10%);
@@ -1002,7 +1058,7 @@
 	
 	.animate-active .img-button {
 	    z-index: 10;
-	    animation: imgButton 800ms 400ms ease-out forwards;
+	    animation: imgButton 800ms 400ms ease-in-out forwards;
 	}
 	
 	@keyframes imgButton {
@@ -1010,7 +1066,7 @@
 	        transform: translate(0, 0%);
 	    }
 	    10% {
-	        transform: translate(0, 5%);
+	        transform: translate(0, 3%);
 	    }
 	    30% {
 	        transform: translate(0, 0);
@@ -1254,6 +1310,11 @@
 	    width: 1.25rem;
 	    height: 1.25rem;
 	    margin-left: 0.5rem;
+	}
+	
+	.icon-s {
+	    width: 1.5rem;
+	    height: 1.5rem;
 	}
 	
 	.read-more {
