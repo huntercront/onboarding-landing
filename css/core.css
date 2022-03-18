@@ -925,7 +925,7 @@
 	}
 	
 	.animate-active .img-rowopen {
-	    animation: imgRowopen 700ms 300ms ease-out forwards;
+	    animation: imgRowopen 900ms 300ms ease-out forwards;
 	}
 	
 	@keyframes imgRowopen {
@@ -952,7 +952,7 @@
 	}
 	
 	.animate-active .img-menu {
-	    animation: imgMenu 700ms ease-in-out forwards;
+	    animation: imgMenu 900ms ease-in-out forwards;
 	}
 	
 	@keyframes imgMenu {
@@ -978,7 +978,7 @@
 	}
 	
 	.animate-active .img-sidebar {
-	    animation: imgSidebar 700ms 600ms ease-in-out forwards;
+	    animation: imgSidebar 1100ms 300ms ease-in-out forwards;
 	}
 	
 	@keyframes imgSidebar {
@@ -992,7 +992,7 @@
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -5%);
+	        transform: translate(0, -7%);
 	    }
 	    100% {
 	        transform: translate(0, -3%);
@@ -1009,11 +1009,11 @@
 	}
 	
 	.animate-active .img-row-1 {
-	    animation: imgRowOne 600ms 450ms ease-in-out forwards;
+	    animation: imgRowOne 700ms 450ms ease-in-out forwards;
 	}
 	
 	.animate-active .img-row-2 {
-	    animation: imgRowTwo 600ms 500ms ease-in-out forwards;
+	    animation: imgRowTwo 700ms 500ms ease-in-out forwards;
 	}
 	
 	@keyframes imgRowOne {
@@ -1058,7 +1058,7 @@
 	
 	.animate-active .img-button {
 	    z-index: 10;
-	    animation: imgButton 800ms 400ms ease-in-out forwards;
+	    animation: imgButton 1000ms 350ms ease-in-out forwards;
 	}
 	
 	@keyframes imgButton {
@@ -1072,7 +1072,7 @@
 	        transform: translate(0, 0);
 	    }
 	    70% {
-	        transform: translate(0, -30%);
+	        transform: translate(0, -22%);
 	    }
 	    100% {
 	        transform: translate(0, -15%);
