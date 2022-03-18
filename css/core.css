@@ -925,7 +925,7 @@
 	}
 	
 	.animate-active .img-rowopen {
-	    animation: imgRowopen 900ms 300ms ease-out forwards;
+	    animation: imgRowopen 1500ms 300ms ease-out forwards;
 	}
 	
 	@keyframes imgRowopen {
@@ -952,21 +952,18 @@
 	}
 	
 	.animate-active .img-menu {
-	    animation: imgMenu 900ms ease-in-out forwards;
+	    animation: imgMenu 1500ms 300ms ease-in-out forwards;
 	}
 	
 	@keyframes imgMenu {
 	    0% {
 	        transform: translate(0, 0%);
 	    }
-	    10% {
-	        transform: translate(0, 1%);
-	    }
 	    30% {
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -5%);
+	        transform: translate(0, -7%);
 	    }
 	    100% {
 	        transform: translate(0, -3%);
@@ -978,7 +975,7 @@
 	}
 	
 	.animate-active .img-sidebar {
-	    animation: imgSidebar 1100ms 300ms ease-in-out forwards;
+	    animation: imgSidebar 1600ms 500ms ease-in-out forwards;
 	}
 	
 	@keyframes imgSidebar {
@@ -992,10 +989,10 @@
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -7%);
+	        transform: translate(0, -9%);
 	    }
 	    100% {
-	        transform: translate(0, -3%);
+	        transform: translate(0, -4%);
 	    }
 	}
 	
@@ -1009,11 +1006,11 @@
 	}
 	
 	.animate-active .img-row-1 {
-	    animation: imgRowOne 700ms 450ms ease-in-out forwards;
+	    animation: imgRowOne 1300ms 400ms ease-in-out forwards;
 	}
 	
 	.animate-active .img-row-2 {
-	    animation: imgRowTwo 700ms 500ms ease-in-out forwards;
+	    animation: imgRowTwo 1300ms 500ms ease-in-out forwards;
 	}
 	
 	@keyframes imgRowOne {
@@ -1027,7 +1024,7 @@
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -13%);
+	        transform: translate(0, -15%);
 	    }
 	    100% {
 	        transform: translate(0, -14%);
@@ -1045,7 +1042,7 @@
 	        transform: translate(0, 0);
 	    }
 	    60% {
-	        transform: translate(0, -12%);
+	        transform: translate(0, -11%);
 	    }
 	    100% {
 	        transform: translate(0, -10%);
@@ -1058,7 +1055,7 @@
 	
 	.animate-active .img-button {
 	    z-index: 10;
-	    animation: imgButton 1000ms 350ms ease-in-out forwards;
+	    animation: imgButton 1500ms 350ms ease-in-out forwards;
 	}
 	
 	@keyframes imgButton {
@@ -1066,13 +1063,13 @@
 	        transform: translate(0, 0%);
 	    }
 	    10% {
-	        transform: translate(0, 3%);
+	        transform: translate(0, 1%);
 	    }
 	    30% {
 	        transform: translate(0, 0);
 	    }
 	    70% {
-	        transform: translate(0, -22%);
+	        transform: translate(0, -30%);
 	    }
 	    100% {
 	        transform: translate(0, -15%);
