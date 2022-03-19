@@ -599,6 +599,11 @@
 	    position: relative;
 	}
 	
+	.anchor {
+	    position: relative;
+	    top: -8rem;
+	}
+	
 	.play-video {
 	    position: absolute;
 	    top: 45%;
