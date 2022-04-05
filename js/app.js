@@ -41,7 +41,23 @@ Loader.prototype = {
 
 document.addEventListener("DOMContentLoaded", function(event) {
 
-    document.body.classList.remove('loading')
+
+    let mapAnimation = document.querySelector('.map-images');
+    let lastAnimation = document.querySelector('.map-5');
+
+    function myStartFunction() {
+        mapAnimation.classList.remove('map-animated');
+        setTimeout(() => {
+            mapAnimation.classList.add('map-animated');
+        }, 1);
+    }
+
+
+    lastAnimation.addEventListener("webkitAnimationEnd", myStartFunction);
+    lastAnimation.addEventListener("animationend", myStartFunction);
+
+
+    document.body.classList.remove('loading');
     let last_known_scroll_position = 0;
     let ticking = false;
 
